@@ -1,0 +1,147 @@
+/* font for using css */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+   
+  
+}
+/* headding css  */
+.top-header{
+   display: flex;
+   justify-content: center; 
+}
+
+.headding-div{
+    background: rgba(45, 37, 160, 1);
+    width: 1440px;
+    height: 677px;
+}
+.headding-content{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 39px;
+      margin-top: 135px;
+  }
+
+.banner-photo img{
+    width: 556px;
+    height: 438px;
+   }
+
+.headding-title{
+    color: #FFFFFF;;
+    font-size: 64px;
+    font-weight: bold;
+   margin-left: 150px;
+}
+
+.header-button{
+    background: #E02C6D;
+    margin-left:156px ;
+    padding: 10px;
+}
+
+
+.headding-div a{
+   text-decoration: none;
+   color:  #FFFFFF;
+   }
+.ancor i{
+    margin-left:8px;
+   }
+    /* button hover effict  */
+.header-button:hover{
+    background: rgb(8, 216, 70);
+    color: black;
+}
+/* main section css start  */
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+background: #F3F1FF;
+width: 1440px;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin: 70px 200px 162px 200px;
+}
+.players .player-photo img{
+    width:300px;
+    height: 256px;
+   }
+
+.player-photo{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+   }
+
+.text-width{
+    font-size:28px ;
+}
+
+/* banner css for footer  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+}
+.comment-box{
+    
+}
+
+.banner-logo img{
+    width: 484px;
+    height: 110px;
+  
+}
+.fab{
+    margin-left: 22px;
+}
+/*********************************
+ mobile users of iPhone6/7/8plus 
+ ******************************** */
+@media only screen and (max-width:688px) {
+     .headding-div, .container{
+       width:100%;
+        }
+
+        .headding-content{
+                grid-template-columns:repeat(1, 1fr);
+                margin: 5px;
+       }
+       .players{
+        grid-template-columns:repeat(1, 1fr);
+        margin-left: 45px;
+      
+       }
+
+    .headding-title{
+     font-size: 36px;
+     }
+
+ .banner-photo img{
+    width: 330px;
+    height: 260px;
+    margin-top: 15px;
+    } 
+    
+    .player-photo{
+       padding: 5px;
+      }
+   .banner-logo img{
+    
+    width:100%;
+}
+}
